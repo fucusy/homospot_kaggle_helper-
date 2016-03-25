@@ -36,7 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				'attribute' =>'product_description',
 				'format'=>'text',
 				'value'=>function($model){
-					return substr($model->product_description, 0, 30);
+					return substr($model->product_description, 0, 30) . "...";
 				}
 			]
             
